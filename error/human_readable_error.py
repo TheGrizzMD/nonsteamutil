@@ -1,0 +1,2 @@
+class HumanReadableError(Exception):
+    pass
