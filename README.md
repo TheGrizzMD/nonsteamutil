@@ -38,8 +38,10 @@ There is also a command line option to specify a different config file to use.
     cd utils/nonsteamutil
     konsole --noclose -e python nonsteamutil.py --config config.txt
 
-The code is very messy. I stopped working on it once it produced the functionality that I wanted, but I am making it available for the small chance that it helps someone else.
-
 # Backups
 
 The utility will backup the shortcuts.vdf file in the Backups folder in case the utility screws up the shortcuts.vdf file when adding a game.
+
+# Spaghetti Code Disclaimer
+
+The code is very messy. I stopped working on it once it produced the functionality that I wanted, but I am making it available for the small chance that it helps someone else.
