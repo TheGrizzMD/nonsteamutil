@@ -1,16 +1,18 @@
 # nonsteamutil
 
-<p>This is a python Utility to add a standalone Linux game or application as a non-steam game to the Steam Deck (Linux SteamOS only)</p>
+This is a python utility to add a standalone game or application as a non-steam game to Steam within SteamOS for the Steam Deck (Does not work with Windows).  
 
-<p>I wanted the functionality to add a standalone application as a non-steam game wihtout needing another application like Steam Rom Manger or BoilR.</p>
+I wanted the functionality to add a standalone application as a non-steam game without needing another application like Steam Rom Manger or BoilR.  
 
-<p>This was created from scottrice's Ice and Pysteam projects, with help from CorporalQuesadilla's Steam-Shortcut-Manager as well.</p>
+Most of the code is from [scottrice](https://github.com/scottrice)'s [Pysteam](https://github.com/scottrice/pysteam) and [Ice](https://github.com/scottrice/Ice)   projects, with a small part from [CorporalQuesadilla](https://github.com/CorporalQuesadilla)'s [Steam-Shortcut-Manager](https://github.com/CorporalQuesadilla/Steam-Shortcut-Manager) as well to increment the AppID IIRC.  
 
-<p>I had to update the code for Python 3, and the functionality has been reduced to just appending a game to shortcuts.vdf</p>
+I had to update the code for Python 3, and the functionality has been reduced to just appending a game to shortcuts.vdf due to my limited knowledge of Python. 
 
-<p>This utility is currently hardcoded to look for the artwork in a folder named "Steam-Artwork" that is two directories above where the utility is located.</p>
-<p>The filenames of the Steam-Artwork images can be changed in config.txt.</p>
-<p>The directory structure should look like this:</p>
+This utility is currently hardcoded to look for the Steam artwork in a folder named "Steam-Artwork" that is two directories above where the utility is located.  
+
+The filenames of the Steam-Artwork images can be changed in the config file.  
+
+The directory structure should look like this:  
 
     Application Directory
         /utils
@@ -22,3 +24,22 @@
             /hero.png
             /logo.png
             /portrait.png
+
+# Changing the Configuration
+The [GAME] section of the config.txt file is all that needs to be modified.
+
+The utility is going to assume that the "Game Exe" is in the "Application Directory" (see the directory structure example in the section above.)
+
+There is also a command line option to specify a different config file to use.
+
+# Example Usage within a shell script:
+
+    #!/bin/bash
+    cd utils/nonsteamutil
+    konsole --noclose -e python nonsteamutil.py --config config.txt
+
+The code is very messy. I stopped working on it once it produced the functionality that I wanted, but I am making it available for the small chance that it helps someone else.
+
+# Backups
+
+The utility will backup the shortcuts.vdf file in the Backups folder in case the utility screws up the shortcuts.vdf file when adding a game.
