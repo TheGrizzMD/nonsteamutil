@@ -2,7 +2,7 @@
 
 This is a python utility to add a standalone game or application as a non-steam game to Steam within SteamOS for the Steam Deck (Does not work with Windows).  
 
-I wanted the functionality to add a standalone application as a non-steam game without needing another application like Steam Rom Manger or BoilR.  
+I wanted the functionality to add a standalone application as a non-steam game without the need for another application like Steam Rom Manger or BoilR.  
 
 Most of the code is from [scottrice](https://github.com/scottrice)'s [Pysteam](https://github.com/scottrice/pysteam) and [Ice](https://github.com/scottrice/Ice)   projects, with a small part from [CorporalQuesadilla](https://github.com/CorporalQuesadilla)'s [Steam-Shortcut-Manager](https://github.com/CorporalQuesadilla/Steam-Shortcut-Manager) as well to increment the AppID IIRC.  
 
