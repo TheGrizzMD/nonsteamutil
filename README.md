@@ -4,7 +4,7 @@ This is a python utility to add a standalone game or application as a non-steam 
 
 I wanted the functionality to add a standalone application as a non-steam game without the need for another application like Steam Rom Manger or BoilR.  
 
-Most of the code is from [scottrice](https://github.com/scottrice)'s [Pysteam](https://github.com/scottrice/pysteam) and [Ice](https://github.com/scottrice/Ice)   projects, with a small part from [CorporalQuesadilla](https://github.com/CorporalQuesadilla)'s [Steam-Shortcut-Manager](https://github.com/CorporalQuesadilla/Steam-Shortcut-Manager) as well to increment the AppID IIRC.  
+Most of the code is from [scottrice](https://github.com/scottrice)'s [Pysteam](https://github.com/scottrice/pysteam) and [Ice](https://github.com/scottrice/Ice)   projects, with a small part from [CorporalQuesadilla](https://github.com/CorporalQuesadilla)'s [Steam-Shortcut-Manager](https://github.com/CorporalQuesadilla/Steam-Shortcut-Manager) as well to increment the AppID.  
 
 I had to update the code for Python 3, and the functionality has been reduced to just appending a game to shortcuts.vdf due to my limited knowledge of Python. 
 
